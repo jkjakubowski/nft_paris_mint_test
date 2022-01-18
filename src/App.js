@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { hot } from "react-hot-loader"
+import ReactPlayer from "react-player"
+import video from "../public/ressources/Ticket_Final.mp4"
 import "./App.css"
 /** @jsx jsx */
 import { jsx, css, Global } from "@emotion/react"
@@ -20,7 +22,7 @@ const style = css`
     font-family: "druk_wide";
     src: url("src/fonts/druk_wide.otf") format("otf");
   }
-  color: hotpink;
+  color: #5835e9;
   font-size: 5rem;
   font-family: "druk_wide";
 `
@@ -39,11 +41,20 @@ class App extends Component {
           <h1 css={style}>Special gift!</h1>
           <h2
             css={css`
-              font-size: 4rem;
+              font-size: 2rem;
+              color: #ffffff;
+              margin-top: 1rem;
             `}
           >
-            Thanks you for attending the first edition of NFT Paris!
+            Thanks for attending the first edition of NFT Paris!
           </h2>
+
+          <ReactPlayer
+            url={video}
+            width="100%"
+            height="100%"
+            controls={false}
+          />
         </div>
       </div>
     )

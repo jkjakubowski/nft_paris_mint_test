@@ -26,8 +26,11 @@
     "@emotion/css": "^11.7.1",
     "@emotion/react": "^11.7.1",
     "ethers": "^5.5.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-hot-loader": "^4.3.11"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-hot-loader": "^4.3.11",
+    "react-player": "^2.9.0",
+    "redux": "^4.1.2",
+    "video-react": "^0.15.0"
   }
 }
